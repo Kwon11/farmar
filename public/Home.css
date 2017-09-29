@@ -14,6 +14,7 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
+  height: 4vw;
 }
 @media (max-device-width: 800px) {
   nav {
@@ -32,8 +33,8 @@ nav {
   width: 35vw;
   float: left;
   margin-right: 5vw;
-  margin-top: .5em;
-  margin: .5em 5vw 20vh 0;
+  margin-top: 0.5em;
+  margin: 0.5em 5vw 20vh 0;
   border-radius: 1em;
 }
 @media (max-width: 700px) {
@@ -151,12 +152,14 @@ nav {
 .NavbarLink {
   text-decoration: none;
   color: #424242;
-  padding: 12px;
   font-size: 4vh;
+  padding-bottom: 0.1vw;
 }
+
 .NavbarLink:hover {
-  text-decoration: underline;
-  text-decoration-color: #e14e4e;
+  /*text-decoration: underline;
+  text-decoration-color: #e14e4e;*/
+  border-bottom: 2px solid #e14e4e;
 }
 .ProductsList {
   width: 75vw;
@@ -234,7 +237,7 @@ nav {
   padding: 1vw 0vw 1vw 1vw;
 }
 .Selected {
-  text-decoration: underline;
+  border-bottom: 2px solid #e14e4e;
 }
 .SelectedImage {
   width: 75vw;

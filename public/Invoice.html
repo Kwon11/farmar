@@ -7,11 +7,25 @@
 
 <body>
   <nav>
-    <a class="NavbarLink" href="/Home">Home</a>
+    <div class="NavbarLinkContainer">
+    <a class="NavbarLink Selected" href="/Home">Home</a>
+    </div>
+    <div class="NavbarLinkContainer">
     <a class="NavbarLink" href="Location">Location</a>
+
+    </div>
+    <div class="NavbarLinkContainer">
     <a class="NavbarLink" href="/Products">Products</a>
+
+    </div>
+    <div class="NavbarLinkContainer">
     <a class="NavbarLink" href="/Services">Services</a>
-    <a class="NavbarLink Selected" href="/Invoice">Invoice</a>
+
+    </div>
+    <div class="NavbarLinkContainer">
+
+    <a class="NavbarLink" href="/Invoice">Invoice</a>
+    </div>
   </nav>
 
   <div class="BackgroundImageContainer">
@@ -27,7 +41,7 @@
 
     <div class="EmailBody">
 
-    <form class="EmailForm" action="http://infinite-tor-80649.herokuapp.com/Invoice" method="post" enctype="application/x-www-form-urlencoded">  
+    <form class="EmailForm" action="http://infinite-tor-80649.herokuapp.com/Invoice" method="post" enctype="application/x-www-form-urlencoded">
 
       <div class="EmailField">
         <input class="EmailInput" name="Name" value=" Name">
@@ -53,10 +67,10 @@
       </div>
 
       <button class="EmailInput HomeLink" style="border: 0; margin: auto;">Send</button>
-    
+
     </form>
     </div>
-    
+
   </div>
 
 </body>
