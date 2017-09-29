@@ -107,7 +107,8 @@ nav {
   padding-top: 3vh;
 }
 .EmailInput {
-  width: 100%;
+  width: 20%;
+  height: 5vh
   padding: 0px;
   font-size: inherit;
   color: inherit;
@@ -250,4 +251,8 @@ nav {
 .SelectedImageContainer {
   display: flex;
   margin: auto;
+}
+
+#SendButtonContainer {
+  text-align: center;
 }

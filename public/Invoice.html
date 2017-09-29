@@ -3,6 +3,7 @@
 <head>
   <title>Grand Topham Ranch</title>
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.41, maximum-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 
 <body>
@@ -44,15 +45,15 @@
     <form class="EmailForm" action="http://infinite-tor-80649.herokuapp.com/Invoice" method="post" enctype="application/x-www-form-urlencoded">
 
       <div class="EmailField">
-        <input class="EmailInput" name="Name" value=" Name">
+        <input class="EmailInput" name="Name" placeholder="" =" Name">
       </div>
 
       <div class="EmailField">
-        <input class="EmailInput" name="FromEmail" value=" Your Email">
+        <input class="EmailInput" name="FromEmail" placeholder="" =" Your Email">
       </div>
 
       <div class="EmailField">
-        <input class="EmailInput" name="Phone" value=" Phone Number">
+        <input class="EmailInput" name="Phone" placeholder="" =" Phone Number">
       </div>
 
       <div class="EmailField">
@@ -65,8 +66,9 @@
       <div class="EmailField">
         <textarea class="EmailBodyInput" name="EmailBody" placeholder=" Invoice, Questions, Comments..."></textarea>
       </div>
-
-      <button class="EmailInput HomeLink" style="border: 0; margin: auto;">Send</button>
+      <div id="SendButtonContainer">
+        <button class="EmailInput HomeLink btn btn-primary">Send</button>
+      </div>
 
     </form>
     </div>
