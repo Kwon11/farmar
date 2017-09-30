@@ -2,9 +2,9 @@ const images = document.querySelectorAll('.ItemImage');
 const SelectedImage = document.querySelector('.SelectedImage');
 const ImageLink = document.querySelector('.ItemImageLink');
 
-function hasSelected() {
+function hasActive() {
   for (var i = 0; i < images.length; i++) {
-    if (images[0].classList.contains('selected')) {
+    if (images[0].classList.contains('active')) {
       return true;
     }
   }
@@ -12,7 +12,7 @@ function hasSelected() {
 }
 
 if (!hasSelected()) {
-  images[0].classList.add('selected');
+  images[0].classList.add('active');
 }
 
 const SelectedThumbnail = document.querySelector('.selected');

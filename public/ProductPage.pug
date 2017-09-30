@@ -23,14 +23,12 @@ html
     div(class='BodyTitle') Products Page
 
     div(class='ProductsList')
-      ul(class='ProductCategory') Products
       each item, itemName in local
         -var url = "/ProductDetail?item=" + itemName
         div(class='ProductItemContainer')
+          a(class='ItemLink' href=url)= itemName
           a(class='ItemLink' href=url)
             img(class='ProductThumnail' src=item.images[0] alt=itemName)
-          li(class='ProductItemLink HomeLink')
-            a(class='ItemLink' href=url)= itemName
 
 
 

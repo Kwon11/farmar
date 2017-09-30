@@ -206,6 +206,9 @@ nav {
   padding-bottom: 20vh;
   line-height: 2em;
   font-size: 1.3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .ProductCategory {
   font-weight: bold;
@@ -268,14 +271,19 @@ nav {
   font-size: 1.3em;
   list-style: none;
 }
+.ItemLink {
+  display: block;
+}
 .ProductThumnail {
   width: 20vw;
   height: 20vw;
 }
 .ProductItemContainer {
-  display: flex;
-  padding: 1vw 0vw 1vw 1vw;
+  display: block;
+  text-align: center;
+  margin-bottom: 1vw;
 }
+
 .Selected {
   border-bottom: 2px solid #e14e4e;
 }
