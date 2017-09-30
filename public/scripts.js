@@ -1,6 +1,12 @@
-const images = document.querySelectorAll('.ItemImage');
-const SelectedImage = document.querySelector('.SelectedImage');
-const ImageLink = document.querySelector('.ItemImageLink');
+const images = document.querySelectorAll('.carousel-item');
+// const SelectedImage = document.querySelector('.SelectedImage');
+// const ImageLink = document.querySelector('.ItemImageLink');
+const thumbnails = document.querySelectorAll('.ThumbnailImages');
+const prev = document.querySelector('.carousel-control-prev');
+const next = document.querySelector('.carousel-control-next');
+
+let imageIndex = 0;
+const length = images.length;
 
 function hasActive() {
   for (var i = 0; i < images.length; i++) {
@@ -11,26 +17,52 @@ function hasActive() {
   return false;
 }
 
-if (!hasSelected()) {
+if (!hasActive()) {
   images[0].classList.add('active');
 }
 
-const SelectedThumbnail = document.querySelector('.selected');
+$('.carousel').carousel('pause');
 
-function handleImageClick() {
-  for (var i = 0; i < images.length; i++) {
-    if (images[i].classList.contains('selected')) {
-      images[i].classList.remove('selected');
+function handleImageNext() {
+  for (var i = 0; i < length; i++) {
+    if (images[i].classList.contains('active')) {
+      images[i].classList.remove('active');
     }
   }
-  this.classList.add('selected');
-  SelectedImage.src = this.src;
-  ImageLink.href = this.src;
+  imageIndex < length - 1 ? imageIndex++ : (imageIndex = 0);
+  images[imageIndex].classList.add('active');
+}
+function handleImagePrev() {
+  for (var i = 0; i < length; i++) {
+    if (images[i].classList.contains('active')) {
+      images[i].classList.remove('active');
+    }
+  }
+  imageIndex > 0 ? imageIndex-- : (imageIndex = length - 1);
+  images[imageIndex].classList.add('active');
 }
 
-images.forEach(function(ele) {
+prev.addEventListener('click', handleImagePrev);
+next.addEventListener('click', handleImageNext);
+
+// const SelectedThumbnail = document.querySelector('.active');
+
+function handleImageClick() {
+  console.dir(this);
+  for (var i = 0; i < images.length; i++) {
+    if (images[i].classList.contains('active')) {
+      images[i].classList.remove('active');
+    }
+
+    if (images[i].children[0].src === this.src) {
+      images[i].classList.add('active');
+    }
+  }
+}
+
+thumbnails.forEach(function(ele) {
   ele.addEventListener('click', handleImageClick);
 });
 
-SelectedImage.src = SelectedThumbnail.src;
-ImageLink.href = SelectedThumbnail.src;
+// SelectedImage.src = SelectedThumbnail.src;
+// ImageLink.href = SelectedThumbnail.src;

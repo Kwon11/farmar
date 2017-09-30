@@ -98,6 +98,20 @@ nav {
   font-size: 1.3em;
   align-items: center;
 }
+.carousel {
+  height: 25vw;
+  width: 50vw;
+  padding-bottom: 10vw;
+}
+.CarouselContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.img-fluid {
+  width: 50vw;
+  height: 40vw;
+}
 .EmailBody {
   display: block;
   width: 80%;
@@ -302,4 +316,19 @@ nav {
 
 #EmailInputButtonContainer {
   text-align: right;
+}
+.ThumbnailContainer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin-top: 1vw;
+}
+.Thumbnails {
+  display: inline;
+  margin: 1vw 1vw 1vw 0vw;
+}
+.ThumbnailImages {
+  height: 5vw;
+  width: 5vw;
+  cursor: pointer;
 }
