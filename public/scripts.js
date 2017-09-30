@@ -21,8 +21,6 @@ if (!hasActive()) {
   images[0].classList.add('active');
 }
 
-$('.carousel').carousel('pause');
-
 function handleImageNext() {
   for (var i = 0; i < length; i++) {
     if (images[i].classList.contains('active')) {
@@ -45,8 +43,6 @@ function handleImagePrev() {
 prev.addEventListener('click', handleImagePrev);
 next.addEventListener('click', handleImageNext);
 
-// const SelectedThumbnail = document.querySelector('.active');
-
 function handleImageClick() {
   console.dir(this);
   for (var i = 0; i < images.length; i++) {
@@ -64,5 +60,3 @@ thumbnails.forEach(function(ele) {
   ele.addEventListener('click', handleImageClick);
 });
 
-// SelectedImage.src = SelectedThumbnail.src;
-// ImageLink.href = SelectedThumbnail.src;

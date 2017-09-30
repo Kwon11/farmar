@@ -27,7 +27,7 @@ html
 
     div(class='BodyTitle')= local.name
     div(class='CarouselContainer')
-      div(class='carousel slide' data-ride='carousel')
+      div(class='carousel slide' data-ride='carousel' data-interval='false')
         div(class='carousel-inner' role='listbox')
 
           each url in local.item.images
