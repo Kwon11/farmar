@@ -86,6 +86,6 @@ app.get('/InvoiceSent', (req, res) => {
   res.sendFile(path.join(__dirname + '/../public/InvoiceSent.html'));
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log('Famars are on the market');
 });
