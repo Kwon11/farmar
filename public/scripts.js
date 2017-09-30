@@ -6,9 +6,9 @@ const next = document.querySelector('.carousel-control-next');
 let imageIndex = 0;
 const length = images.length;
 
-function hasActive() {
+function hasSelected() {
   for (var i = 0; i < images.length; i++) {
-    if (images[0].classList.contains('active')) {
+    if (images[0].classList.contains('selected')) {
       return true;
     }
   }
@@ -17,7 +17,7 @@ function hasActive() {
 
 if (!hasActive()) {
   images[0].classList.add('active');
-}
+
 
 function handleImageNext() {
   for (var i = 0; i < length; i++) {
