@@ -44,7 +44,6 @@ prev.addEventListener('click', handleImagePrev);
 next.addEventListener('click', handleImageNext);
 
 function handleImageClick() {
-  console.dir(this);
   for (var i = 0; i < images.length; i++) {
     if (images[i].classList.contains('active')) {
       images[i].classList.remove('active');
