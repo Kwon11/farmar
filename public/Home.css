@@ -25,6 +25,7 @@ nav {
   opacity: .8;
   width: 100vw;
   background-color: white;
+  z-index: 1;
 }
 @media (max-width: 700px) {
   nav {
