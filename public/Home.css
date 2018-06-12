@@ -20,12 +20,19 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  top: 0;
+  opacity: .8;
+  width: 100vw;
+  background-color: white;
 }
 @media (max-width: 700px) {
   nav {
+    position: relative;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    opacity: 1;
   }
 }
 .AboutImage {
@@ -66,6 +73,12 @@ nav {
   max-width: 100%;
   overflow: hidden;
   margin-bottom: 3vh;
+  margin-top: 8vh;
+}
+@media (max-width: 700px) {
+  .BackgroundImageContainer {
+    margin-top: 0;
+  }
 }
 .BackgroundImage {
   width: 100vw;
