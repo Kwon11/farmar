@@ -12,7 +12,11 @@ module.exports = {
     "images":
       [
         "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Birdnet0.jpg",
-        "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1528683416/Birdnet1.jpg"
+        "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1528683416/Birdnet1.jpg",
+        "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1528683416/Wires%2012ga%2C%2014ga%2C%2016ga1.jpg",
+        "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1528683416/Wires%2012ga%2C%2014ga%2C%2016ga3.jpg",
+        "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1528683416/Wires%2012ga%2C%2014ga%2C%2016ga4.jpg",
+        "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1528683416/Wires%2012ga%2C%2014ga%2C%2016ga5.jpg"
       ]
   },
   "Frozen Cloth": {
@@ -122,11 +126,7 @@ module.exports = {
     "images":
       [
         "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Wires%2012ga%2C%2014ga%2C%2016ga0.jpg",
-        "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1528683416/Wires%2012ga%2C%2014ga%2C%2016ga1.jpg",
-        "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1528683416/Wires%2012ga%2C%2014ga%2C%2016ga2.jpg",
-        "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1528683416/Wires%2012ga%2C%2014ga%2C%2016ga3.jpg",
-        "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1528683416/Wires%2012ga%2C%2014ga%2C%2016ga4.jpg",
-        "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1528683416/Wires%2012ga%2C%2014ga%2C%2016ga5.jpg"
+        "http://res.cloudinary.com/grand-topham-ranch/image/upload/v1528683416/Wires%2012ga%2C%2014ga%2C%2016ga2.jpg"
       ]
   }
 }
